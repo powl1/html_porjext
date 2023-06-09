@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body* { font-size: 14px; }
+        table tr { width: 100%; }
+        table tr td:nth-of-type(2) { width: 5%; }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset style="width: 350px;">
+            <legend>회원가입 양식</legend>
+            <table>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="tname" value="이름을 작성해주세요"></td>
+                </tr>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" name="tid"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="tpass"></td>
+                </tr>
+                <tr>
+                    <td>연락처</td>
+                    <td><input type="text" name="tphone" size="3">-<input type="text" name="tphone" size="4">-<input type="text" name="tphone" size="4"></td>
+                </tr>
+                <tr>
+                    <td>사진</td>
+                    <td><input type="file" name="tphoto"></td>
+                </tr>
+                <tr>
+                    <td>성별구분</td>
+                    <td>
+                        <input type="radio" name="tgender" value="남" checked="checked">남
+                        <input type="radio" name="tgender" value="여">여
+                    </td>
+                </tr>
+                <tr>
+                    <td>사용언어</td>
+                    <td>
+                        <input type="checkbox" name="tlan" value="한글" checked="checked">한글
+                        <input type="checkbox" name="tlan" value="영어">영어
+                        <input type="checkbox" name="tlan" value="중국어">한어
+                        <input type="checkbox" name="tlan" value="일본어">일어
+                    </td>
+                </tr>
+                <tr>
+                    <td>자기소개</td>
+                    <td><textarea name="tintro" row="10" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td>국적</td>
+                    <td>
+                        <select name="kor" id="kor">
+                            <option value="KOREA">KOREA</option>
+                            <option value="JAPNE">JAPEN</option>
+                            <option value="CHINA">CHINA</option>
+                            <option value="AMERIA">AMERIA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>좋아하는 음식</td>
+                    <td>
+                        <select multiple="multiple">
+                            <option>김치</option>
+                            <option>불고기</option>
+                            <option>파전</option>
+                            <option>비빔밥</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <input type="submit" value="회원가입하기">
+                    <input type="reset" value="되돌리기">
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+
+    <!--
+        form 태그
+        action : 주소가 들어간다
+        method : get - 
+        post - 
+
+    -->
+</body>
+</html>
