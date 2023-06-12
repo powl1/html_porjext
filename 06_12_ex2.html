@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap { width: 1000px; margin: 0 auto; border: 3px solid #222; padding: 10px; position: relative; }
+        img{ width: 200px; height: 200px; margin: 10px; float: left; margin:10px; }
+        p { border: 1px solid #eee; position: static; }
+        p#seoul { margin-top: 100px; clear: both; }
+        
+
+    </style>
+</head>
+<body>
+    <form action="get">
+        이름 : <input type="text" name="uname"><br>
+        아이디 : <input type="text" name="uid"><br>
+        비밀번호 : <input type="password" name="upass"><br>
+        연락처 : <input type="text" name="uph" size="3">-<input type="text" name="uph2" size="3">-<input type="text" name="uph3" size="3"><br>
+        사진 : <input type="file" name="ufile"><br>
+        성별구분 : <input type="radio" name="ugen" value="남">남, <input type="radio" name="ugen" value="여">여<br>
+        사용언어 : <input type="checkbox" checked="checked" name="ulang" value="한글">한글, <input type="checkbox" name="ulang" value="영어">영어, <input type="checkbox" name="ulang" value="일어">일어, <input type="checkbox" name="ulang" value="중국어">중국어<br>
+        자기소개 : <textarea name="uintro" id="id_intro" cols="30" rows="10">간단하게 입력하세요.</textarea><br>
+        국적 : <select name="ucon" id="id_con">
+            <option value="KOREA">KOREA</option>
+            <option value="JAPEN">JAPEN</option>
+            <option value="CHINA">CHINA</option>
+        </select><br>
+        좋아하는 음식 : <select multiple="multiple">
+            <option value="김치">김치</option>
+            <option value="불고기">불고기</option>
+            <option value="파전">파전</option>
+            <option value="비빔밥">비빔밥</option>
+        </select><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

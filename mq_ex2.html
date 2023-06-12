@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 { width: 100%; text-align: center; }
+        .wrap { width: 650px; margin: 0 auto; }
+        .wrap:after { content: ""; clear: both; display: block; }
+        .wrap > * { width: 140px; height: 100px; margin: 10px; float: left; }
+        .box1 { background: #fcf; }
+        .box2 { background: rgb(13, 193, 178); }
+        .box3 { background: #ccf; }
+        .box4 { background: #cfc; }
+
+        @media screen and (max-width:768px) {
+            .wrap { width: 350px; }
+        }
+        @media screen and (max-width:480px) {
+            .wrap { width: 150px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>반응형 웹 디자인</h1>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
